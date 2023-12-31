@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../SFUI.woff') format('truetype');
+}
+
+/* Body Styles */
+body {
+    font-family: 'CustomFont', sans-serif;
+    margin: 0;
+    background-color: #9696966e;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #818181;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.header-logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+.header-item {
+    background-color: #ada6a6;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.header-image {
+    position: relative;
+    top: 50px;
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 8vh;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-title-main h2 {
+    font-size: 60px;
+    color: #ebe4e4;
+    text-shadow: 0 3px #0f0f0f;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header-title-main p {
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 0 2px #0f0f0f;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.header-title-main h2 {
+    font-size: 70px;
+    color: rgb(235, 228, 228);
+    text-shadow: 0 5px #0f0f0f;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.header-title-main p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px #0f0f0f;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.body-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.body-image img {
+    width: 60%;
+}
+
+.body-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.body-info {
+    background-color: rgb(210,105,30);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+.body-info h1 {
+    margin: 0;
+}
+
+.body-info p {
+    margin: 0;
+}
+
+.body-release {
+    background-color: rgb(210,105,30);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.button-release {
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+}
+
+.button-release:hover {
+    background-color: rgb(89, 95, 95);
+}
+
+.button-release a {
+    text-decoration: none;
+}
+
+.body-release h1 {
+    margin: 0;
+}
+
+.body-release p {
+    margin: 0;
+}
+
+.body-credit {
+    background-color: rgb(210,105,30);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.body-credit h1 {
+    margin: 0;
+}
+
+.body-credit p {
+    margin: 0;
+}
+
+.download-header h1 {
+    color: #000000;
+    margin: 0 20px;
+}
+
+.body-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.download-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px;
+}
+
+.download-ipa button {
+    border: none;
+    background-color: rgb(135, 222, 218);
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.download-ipa button p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.download-ipa button a {
+    text-decoration: none;
+}
+
+.download-trollstore button {
+    border: none;
+    background-color: rgb(135, 222, 218);
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.download-trollstore button p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.download-trollstore button a {
+    text-decoration: none;
+}
+
+.footer-container {
+    color: #42424293;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .header-title-main h2 {
+        font-size: 40px;
+    }
+
+    .header-title-main p {
+        font-size: 17px;
+    }
+
+    .body-credit h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    .body-credit p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .body-release h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    .body-release p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .body-info h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    .body-info p {
+        margin: 0;
+        font-size: 14px;
+    }
+}
