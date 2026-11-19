@@ -51,9 +51,10 @@ export const profile = {
 
   /** Để rỗng '' thì trang ẩn mục email. */
   email: 'phongtrong865@gmail.com',
-  phone: '0343 633 615',
+  /** Để rỗng '' thì trang ẩn số điện thoại (hiện đang ẩn). Ví dụ: '0912 345 678'. */
+  phone: '',
   /** Số dùng cho link bấm-để-gọi (định dạng quốc tế). */
-  phoneHref: '+84343633615',
+  phoneHref: '',
   github: 'https://github.com/dunkeyyfong',
 
   about: {
@@ -266,8 +267,8 @@ export const ui = {
   contactMe: { vi: 'Liên hệ', en: 'Get in touch' },
   seeProjects: { vi: 'Xem dự án', en: 'View projects' },
   contactLead: {
-    vi: 'Liên hệ với tôi qua email, điện thoại hoặc GitHub.',
-    en: 'Reach me by email, phone, or GitHub.',
+    vi: 'Liên hệ với tôi qua email.',
+    en: 'Reach me by email.',
   },
   techUsed: { vi: 'Công nghệ', en: 'Tech' },
   opensInNewTab: { vi: '(mở tab mới)', en: '(opens in a new tab)' },

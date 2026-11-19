@@ -330,16 +330,18 @@ export function Contact() {
           </div>
         )}
 
-        <ul className="mt-10 grid gap-3 sm:grid-cols-3">
-          <li>
-            <a href={`tel:${profile.phoneHref}`} className={tileLink}>
-              <Icon name="phone" className="size-5 text-white/80" />
-              <span>
-                <span className="block text-xs text-white/75">{t(ui.phone)}</span>
-                <span className="font-semibold">{profile.phone}</span>
-              </span>
-            </a>
-          </li>
+        <ul className={`mt-10 grid gap-3 ${profile.phone ? 'sm:grid-cols-3' : 'sm:grid-cols-2'}`}>
+          {profile.phone && (
+            <li>
+              <a href={`tel:${profile.phoneHref}`} className={tileLink}>
+                <Icon name="phone" className="size-5 text-white/80" />
+                <span>
+                  <span className="block text-xs text-white/75">{t(ui.phone)}</span>
+                  <span className="font-semibold">{profile.phone}</span>
+                </span>
+              </a>
+            </li>
+          )}
           <li>
             <a href={profile.github} target="_blank" rel="noopener noreferrer" className={tileLink}>
               <Icon name="github" className="size-5 text-white/80" />
