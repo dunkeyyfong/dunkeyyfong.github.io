@@ -238,10 +238,6 @@ export const education: { school: Text; degree: Text; status: Text; note?: Text 
 
 export const languages: { name: Text; level: Text }[] = [
   {
-    name: { vi: 'Tiếng Nhật', en: 'Japanese' },
-    level: { vi: 'Giao tiếp trong công việc', en: 'Professional working communication' },
-  },
-  {
     name: { vi: 'Tiếng Anh', en: 'English' },
     level: { vi: 'Đọc hiểu tài liệu kỹ thuật', en: 'Reading technical documentation' },
   },
